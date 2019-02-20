@@ -6,12 +6,15 @@ int main()
     printf("Enter a positive integer: ");
     scanf("%d",&n);
 
-    for(i=1; i <= n; ++i)
+    i = 1;
+    while ( i <=n )
     {
-        sum += i;   // sum = sum+i;
+        sum += i;
+        ++i;
     }
 
     printf("Sum = %d",sum);
 
     return 0;
 }
+
