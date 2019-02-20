@@ -1,11 +1,16 @@
 #include<stdio.h>
-int main()
+int main(void)
 {
-char c;
-scanf("%c",&c);
-if((c=='a')||(c=='A')||(c=='e')||(c=='E')||(c=='i')||(c=='I')||(c=='o')||(c=='O')||(c=='u')||(c=='U'))
-printf("vowel");
+char a;
+scanf(“%c”,a);
+if(((a>=’a’)||(a>=’A’))&&((a<=’z’)||(a<=’Z’)))
+{
+if(a==’a’||a==’e’||a==’i’||a==’o’||a==’u’||a==’A’||a==’E’||a==’I’||a==’O’||a==’U’)
+ printf(“vowel);
+else 
+ printf(“consonant”);
+}
 else
-printf("consonent");
+printf(“not an alphabet”);
 return 0;
 }
